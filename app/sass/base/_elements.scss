@@ -1,0 +1,12 @@
+.icon {
+	&--price {
+		display: inline-block;
+		margin-right: 10px;
+		width: 14px;
+		height: 18px;
+		background-image: url(../img/price.png);
+		background-position: 50%;
+		background-repeat: no-repeat;
+		vertical-align: text-bottom;
+	}
+}

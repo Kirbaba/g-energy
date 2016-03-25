@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/fotorama.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="sass/style.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
     <!-- open .header -->
-    <header class="header">
+    <header class="header navbar-fixed-top">
         <!-- open .container -->
         <div class="container">
             <!-- open .row -->
@@ -34,57 +37,48 @@
                     <!-- open .col-md-5 col-sm-3 -->
                     <div class="col-md-5 col-sm-3">
                         <input type="text" class="header--search" placeholder="ПОИСК ПО САЙТУ"/>
+                        <button class="header--search--btn"><i class="fa fa-search"></i></button>
                     </div>
                     <!-- close .col-md-5 col-sm-3 -->
-                    <!-- open .col-md-2 col-sm-3 -->
-                    <div class="col-md-1 col-sm-2">
-                        <!-- open .row -->
-                        <div class="">
-                            <div class="dropdown header--lang">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    <img src="img/rus.png" alt="" />
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#"><img src="img/rus.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/en.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/it.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/esp.png" alt="" /></a></li>
-                                </ul>
-                            </div>
-                            
-                            
-                        </div>
-                        <!-- close .row -->
-                        
-                       
-                    </div>
-
-                    <!-- open .col-md-1 col-sm-2 -->
-                    <div class="col-md-1 col-sm-2">
+                    <!-- open .col-md-4 -->
+                    <div class="col-md-4">
                         <!-- open .row -->
                         <div class="row">
-                            <!-- open .header--social -->
-                            <div class="header--social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <!-- open .col-md-2 -->
+                            <div class="col-md-3 p0">
+                                <div class="dropdown header--lang">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <img src="img/rus.png" alt="" />
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#"><img src="img/rus.png" alt="" /></a></li>
+                                        <li><a href="#"><img src="img/en.png" alt="" /></a></li>
+                                        <li><a href="#"><img src="img/it.png" alt="" /></a></li>
+                                        <li><a href="#"><img src="img/esp.png" alt="" /></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <!-- close .header--social -->
+                            <!-- close .col-md-2 -->
+                            <!-- open .col-md-2 -->
+                            <div class="col-md-3 p0">
+                                <div class="header--social">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                            <!-- close .col-md-2 -->
+                            <!-- open .col-md-8 -->
+                            <div class="col-md-6 p0">
+                                 <a href="#" class="header--modal"><i class="fa fa-envelope-o"></i>Свяжитесь с нами</a>
+                            </div>
+                            <!-- close .col-md-8 -->
                         </div>
                         <!-- close .row -->
                     </div>
-                    <!-- close .col-md-1 col-sm-2 -->
-                    <!-- close .col-md-2 col-sm-3 -->
-                    <!-- open .col-md-2 col-sm-2 -->
-                    <div class="col-md-2 col-sm-2">
-                        <!-- open .row -->
-                        <div class="">
-                            <a href="#" class="header--modal"><i class="fa fa-envelope-o"></i>Свяжитесь с нами</a>
-                        </div>
-                        <!-- close .row -->
-                        
-                    </div>
-                    <!-- close .col-md-2 col-sm-2 -->
+                    <!-- close .col-md-4 -->
+
+                   
                     
                 </div>
                 <!-- close .row -->
@@ -95,9 +89,137 @@
     </header>
     <!-- close .header -->
 
+    <nav class="navbar navbar-default navigation">
+      <div class="container">
+        <!-- open .row -->
+        <div class="row">
+             <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header navbar-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+
+                <li><a href="#"><i class="fa fa-home"></i></a></li>
+                <li><a href="#">О БРЕНДЕ</a></li> 
+                <li><a href="#">ПРОДУКЦИЯ</a></li>
+                <li><a href="#">ПОДБОР МАСЛА</a></li> 
+                <li><a href="#">ГДЕ КУПИТЬ</a></li>
+                <li><a href="#">G-Energy Service</a></li>  
+                <li><a href="#">НОВОСТИ</a></li>            
+              </ul>          
+              
+            </div><!-- /.navbar-collapse -->
+        </div>
+        <!-- close .row -->
+       
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- open .top-slider -->
+    <section class="top-slider">
+        <!-- open .container -->
+        <div class="container">
+            <!-- open .row -->
+            <div class="row">
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                    
+                    <div class="top-slider__item">
+                        <!-- open .row -->
+                        <div class="row">
+                            <!-- open .col-md-10 col-sm-12 -->
+                            <div class="col-md-10 col-md-offset-1 col-sm-12">
+                                <!-- open .col-md-5 col-sm-5 col-xs-12 -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/1429769301_0_55388c55e31ca.png" alt="" />
+                                </div>
+                                <!-- close .col-md-5 col-sm-5 col-xs-12 -->
+                                <!-- open .col-md-5 col-sm-5 col-xs-12 -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <h2>G-ENERGY </h2>
+                                    <p>Моторные масла G-Energy предназначены для современных легковых автомобилей европейского, американского и японского производства и включают в себя две серии продуктов: серию синтетических масел F Synth и серию полусинтетических масел S Synth. </p>
+                                    <a href="" class="top-slider--more">УЗНАЙТЕ БОЛЬШЕ</a>
+                                </div>
+                                <!-- close .col-md-5 col-sm-5 col-xs-12 -->
+                            </div>
+                            <!-- close .col-md-10 col-sm-12 -->
+                        </div>
+                        <!-- close .row -->
+                    </div>
+                    <div class="top-slider__item">
+                        <!-- open .row -->
+                        <div class="row">
+                            <!-- open .col-md-10 col-sm-12 -->
+                            <div class="col-md-10 col-md-offset-1 col-sm-12">
+                                <!-- open .col-md-5 col-sm-5 col-xs-12 -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/1429769440_0_55388ce08f09b.png" alt="" />
+                                </div>
+                                <!-- close .col-md-5 col-sm-5 col-xs-12 -->
+                                <!-- open .col-md-5 col-sm-5 col-xs-12 -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <h2>G-ENERGY </h2>
+                                    <p>Моторные масла G-Energy предназначены для современных легковых автомобилей европейского, американского и японского производства и включают в себя две серии продуктов: серию синтетических масел F Synth и серию полусинтетических масел S Synth. </p>
+                                    <a href="" class="top-slider--more">УЗНАЙТЕ БОЛЬШЕ</a>
+                                </div>
+                                <!-- close .col-md-5 col-sm-5 col-xs-12 -->
+                            </div>
+                            <!-- close .col-md-10 col-sm-12 -->
+                        </div>
+                        <!-- close .row -->
+                    </div>
+                    <div class="top-slider__item">
+                        <!-- open .row -->
+                        <div class="row">
+                            <!-- open .col-md-10 col-sm-12 -->
+                            <div class="col-md-10 col-md-offset-1 col-sm-12">
+                                <!-- open .col-md-5 col-sm-5 col-xs-12 -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <img src="img/1429769550_0_55388d4e628d1.png" alt="" />
+                                </div>
+                                <!-- close .col-md-5 col-sm-5 col-xs-12 -->
+                                <!-- open .col-md-5 col-sm-5 col-xs-12 -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <h2>G-ENERGY </h2>
+                                    <p>Моторные масла G-Energy предназначены для современных легковых автомобилей европейского, американского и японского производства и включают в себя две серии продуктов: серию синтетических масел F Synth и серию полусинтетических масел S Synth. </p>
+                                    <a href="" class="top-slider--more">УЗНАЙТЕ БОЛЬШЕ</a>
+                                </div>
+                                <!-- close .col-md-5 col-sm-5 col-xs-12 -->
+                            </div>
+                            <!-- close .col-md-10 col-sm-12 -->
+                        </div>
+                        <!-- close .row -->
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- close .row -->
+        </div>
+        <!-- close .container -->
+    </section>
+    <!-- close .top-slider -->
+
+    <!-- open .assortment -->
+    <section class="assortment">
+        <a href="#" class="assortment--link">
+            ПОДБЕРИТЕ МАСЛО G-ENERGY <i class="icon--assortment"></i> ДЛЯ СВОЕГО АВТОМОБИЛЯ
+        </a>
+    </section>
+    <!-- close .assortment -->
+
 </body>
     <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/fotorama.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/highlight.js" type="text/javascript"></script>
     <script src="js/script.min.js" type="text/javascript"></script>
 </html>

@@ -2,11 +2,26 @@
 	&--price {
 		display: inline-block;
 		margin-right: 10px;
-		width: 14px;
-		height: 18px;
+		width: 21px;
+    	height: 26px;
 		background-image: url(../img/price.png);
 		background-position: 50%;
 		background-repeat: no-repeat;
 		vertical-align: text-bottom;
+	}
+	&--assortment {
+		display: inline-block;
+		position: relative;
+		margin: 0 10px;
+		width: 67px;
+		height: 67px;
+		@include border-radius(34px);
+		@include background-clip(padding-box);
+		background-color: #e95f0d;
+		vertical-align: middle;
+		@include transition(.3s);
+		background-image: url('../img/assort.png');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
 	}
 }

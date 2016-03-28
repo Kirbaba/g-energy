@@ -55,10 +55,62 @@
     border-top: 1px solid #454545;
     border-bottom: 1px solid #454545;
     text-align: center; }
+    .footer__mid--share {
+      display: inline-block;
+      width: 45%;
+      float: left;
+      text-align: right;
+      margin-right: 5%; }
+      .footer__mid--share span {
+        display: inline-block;
+        font-size: 14px;
+        font-family: "DINProBold";
+        color: #666;
+        text-transform: uppercase;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        cursor: pointer; }
+      .footer__mid--share span:hover {
+        color: #ffffff; }
+      .footer__mid--share a {
+        opacity: 0.2;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        display: inline-block;
+        margin: 0px 10px 0px 10px; }
+      .footer__mid--share a:hover {
+        opacity: 1; }
+    .footer__mid--share:nth-of-type(2) {
+      display: inline-block;
+      width: 45%;
+      float: left;
+      text-align: left; }
   .footer__bot {
     width: 100%;
     float: left;
     padding: 40px 0px 35px 0px; }
+    .footer__bot--copyright {
+      font-size: 14px;
+      font-family: "DINProBold";
+      color: #666; }
+      .footer__bot--copyright a {
+        font-size: 14px;
+        font-family: "DINProBold";
+        color: #666;
+        text-decoration: none;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear; }
+      .footer__bot--copyright a:hover {
+        color: #dbdde4; }
+    .footer__bot--translation {
+      margin: 0px 37% 0px 37%;
+      text-align: center; }
 
 /*close footer*/
 /*section techno*/

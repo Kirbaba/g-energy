@@ -1,0 +1,361 @@
+@import "footer/_style";
+
+/*section techno*/
+.techno {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  float: left;
+  background-image: url("../img/tehno_fon.gif");
+  padding: 45px 0px 45px 0px;
+  text-align: center;
+  float: left;
+  &__title {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    float: left;
+    p {
+      font-size: 48px;
+    }
+    p:nth-of-type(2) {
+      font-size: 18px;
+      margin-top: -14px;
+    }
+  }
+  &__col{
+    width: 20%;
+    float: left;
+  }
+  &__block {
+    display: inline-block;
+    width: 260px;
+    height: 293px;
+    overflow: hidden;
+    a {
+      display: block;
+      width: 100%;
+      float: left;
+      color: #000;
+      -o-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      .techno__block--img {
+        width: 100%;
+        height: 293px;
+        float: left;
+        img {
+          display: block;
+          margin: 23px auto 50px;
+          -o-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+        }
+        p {
+          font-size: 20px;
+          font-family: "DINProLight";
+        }
+      }
+      .techno__block--text {
+        width: 100%;
+        height: 273px;
+        padding: 20px 0px 0px 0px;
+        font-size: 20px;
+        position: relative;
+        float: left;
+        p {
+          font-size: 20px;
+          font-family: "DINProLight";
+          text-transform: uppercase;
+          padding-top: 10px
+        }
+        p:nth-of-type(2) {
+          font-size: 20px;
+          font-family: "DINProLight";
+          text-transform: none;
+          padding-top: 10px
+        }
+      }
+      .techno__block--text:before {
+        content: "";
+        width: 100px;
+        border-top: 1px solid #989898;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin: 0px 0px 0px -50px;
+      }
+      .techno__block--text:after {
+        content: "";
+        width: 100px;
+        border-bottom: 1px solid #989898;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        margin: 0px 0px 0px -50px;
+      }
+    }
+    a:hover {
+      margin: -293px 0px 0px 0px;
+    }
+    a.techno__block--link {
+      span {
+        background: url("../img/bl-img4.png");
+        width: 153px;
+        height: 150px;
+        margin: 23px 0px 50px 0px;
+        display: inline-block;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+      }
+    }
+    a.techno__block--link:hover {
+      margin: 0 !important;
+      color: #989898;
+      span {
+        background: url("../img/bl-img4h.png");
+      }
+    }
+  }
+}
+/*close section techno*/
+
+/*section buy*/
+.buy {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  &__title {
+    font-size: 38px;
+    font-family: "DINProLight";
+    text-transform: uppercase;
+    span {
+      display: inline-block;
+      position: relative;
+      //      top: 20px;
+      margin: 0px 15px 0px 15px;
+    }
+  }
+  &__map {
+    background: url("../img/map.jpg");
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    &--top {
+      background: rgba(0, 0, 0, 0.60);
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 3;
+      &__center {
+        min-width: 200px;
+        max-width: 1500px;
+        padding: 0px 80px 0px 80px;
+        margin: 0 auto;
+        clear: left;
+        a.section {
+          background: #fff;
+          width: 237px;
+          color: #e95f0e;
+          padding: 6px 0px 8px 0px;
+          font-size: 18px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 20px;
+          -moz-border-radius: 20px;
+          -khtml-border-radius: 20px;
+          -o-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+          float: left;
+        }
+        a.go_section {
+          background: #fff;
+          width: 237px;
+          color: #e95f0e;
+          padding: 6px 0px 8px 0px;
+          font-size: 18px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 20px;
+          -moz-border-radius: 20px;
+          -khtml-border-radius: 20px;
+          -o-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+          float: right;
+        }
+        a.section:hover, a.go_section:hover {
+          background: #e95f0e;
+          color: #fff;
+        }
+        p.city_title {
+          font-size: 24px;
+          font-family: "DINProLight";
+          text-transform: uppercase;
+          color: #fff;
+          margin: 0px 18% 0px 18%;
+          padding: 4px 0px 0px 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+/*close section buy*/
+
+/*section present*/
+.present {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #e95f0e;
+  padding: 0px 0px 30px 0px;
+  float: left;
+  &__title {
+    font-size: 38px;
+    font-family: "DINProLight";
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      display: inline-block;
+      position: relative;
+      margin: 0px 15px 0px 15px;
+    }
+  }
+  &__form {
+    width: 25%;
+    height: 84px;
+    margin: 10px 1% 0px 1%;
+    float: left;
+    input[type="text"], input[type="email"] {
+      background: #fff;
+      width: 100%;
+      padding: 13px 0px 8px 0px;
+      font-size: 27px;
+      font-family: 'DINPro-Light';
+      line-height: 27px;
+      color: #000;
+      text-align: center;
+      outline: none;
+      border: transparent;
+      border-radius: 30px;
+      -moz-border-radius: 30px;
+      -khtml-border-radius: 30px;
+      float: left;
+      -o-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+  }
+  &__submit {
+    width: 17%;
+    margin: 10px 0px 0px 0px;
+    float: left;
+    input[type="submit"] {
+      background: #fff;
+      width: 100%;
+      padding: 13px 0px 8px 0px;
+      font-size: 27px;
+      font-family: 'DINPro-Light';
+      line-height: 27px;
+      color: #e95f0e;
+      text-align: center;
+      outline: none;
+      border: transparent;
+      border-radius: 30px;
+      cursor: pointer;
+      -moz-border-radius: 30px;
+      -khtml-border-radius: 30px;
+      float: left;
+      -o-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+    input[type="submit"]:hover{
+      background: #e95f0e;
+      color: #fff;
+      -moz-box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 1);
+      -webkit-box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 1);
+      box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 1);
+    }
+  }
+}
+/*close section present*/
+
+/*section products*/
+.products{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  &__title{
+    font-size: 38px;
+    font-family: "DINProLight";
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      display: inline-block;
+      position: relative;
+      margin: 0px 15px 0px 15px;
+    }
+  }
+  p{
+    font-size: 21px;
+    font-family: "DINProLight";
+    color: #3b3b3b;
+    text-align: justify;
+//    width: 100%;
+    margin: 30px 50px 30px 50px;
+    float: left;
+  }
+  &__menu{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 45px;
+    &--link{
+      background: #e95f0e;
+      padding: 5px 50px 7px 50px;
+      font-size: 18px;
+      font-family: "DINProBold";
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid #e95f0e;
+      margin: 0px 10px 0px 10px;
+      border-radius: 20px;
+      -moz-border-radius: 20px;
+      -khtml-border-radius: 20px;
+      -o-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+    a.products__menu--link:hover{
+      text-decoration: none;
+      background: #fff;
+      color: #e95f0e;
+    }
+  }
+}
+/*close section products*/

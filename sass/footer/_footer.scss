@@ -1,0 +1,78 @@
+/*footer*/
+.footer{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  background: #252525;
+  z-index: 10;
+  &__top{
+    width: 100%;
+    float: left;
+    padding: 40px 0px 35px 0px;
+    &--banner{
+      width: 33%;
+      margin: -15px 0px 0px 0px;
+      float: left;
+      a{
+        opacity: 0.2;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+      }
+      a:hover{
+        opacity: 1;
+      }
+    }
+    &--social{
+      float: left;
+      width: 33%;
+      text-align: center;
+      a{
+        opacity: 0.2;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+//        display: inline-block;
+        margin: 0px 10px 0px 10px;
+      }
+      a:hover{
+        opacity: 1;
+      }
+    }
+    &--partners{
+      float: left;
+//      width: 33%;
+      text-align: center;
+      a{
+        opacity: 0.75;
+        -o-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        display: inline-block;
+        float: left;
+//        margin: 0px 10px 0px 10px;
+      }
+      a:hover{
+        opacity: 1;
+      }
+    }
+  }
+  &__mid{
+    width: 100%;
+    float: left;
+    padding: 22px 0px 22px 0px;
+    border-top: 1px solid #454545;
+    border-bottom: 1px solid #454545;
+    text-align: center;
+  }
+  &__bot{
+    width: 100%;
+    float: left;
+    padding: 40px 0px 35px 0px;
+  }
+}
+/*close footer*/

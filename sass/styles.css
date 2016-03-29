@@ -309,7 +309,7 @@
       .buy__map--markers__region {
         position: relative;
         font-size: 18px;
-        margin: 1px 0px 0px 0px;
+        margin: 1px 50px 0px 0px;
         float: right; }
         .buy__map--markers__region .region {
           float: left;
@@ -371,6 +371,33 @@
             font-family: "DINProLight";
             outline: none;
             border: none; }
+      .buy__map--markers__checkbox {
+        margin: 6px 0px 0px 50px;
+        float: left; }
+        .buy__map--markers__checkbox label {
+          margin: 0px 55px 0px 0px;
+          position: relative;
+          color: #222;
+          font-family: "DINProLight";
+          font-size: 23px; }
+          .buy__map--markers__checkbox label input[type="checkbox"] {
+            display: none; }
+          .buy__map--markers__checkbox label input[type="checkbox"] + label span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            margin: -1px 15px 0 0;
+            vertical-align: middle;
+            cursor: pointer;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            border: 2px solid #ff6b00; }
+          .buy__map--markers__checkbox label input[type="checkbox"]:checked + label span {
+            background-color: #ff6b00;
+            background-image: url("../img/label.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ff6b00; }
     .buy__map--top {
       background: rgba(0, 0, 0, 0.6);
       width: 100%;
@@ -561,5 +588,13 @@
       color: #e95f0e; }
 
 /*close section products*/
+/*yandex map*/
+.ymaps-2-1-35-islets_card__title {
+  font-size: 24px;
+  font-family: "DINProLight";
+  color: #e95f0e !important;
+  text-transform: uppercase; }
+
+/*close yandex map*/
 
 /*# sourceMappingURL=styles.css.map */

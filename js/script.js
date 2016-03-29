@@ -35,12 +35,12 @@ $(document).ready(function(){/*функция фиксированного ме�
 $(document).ready(function(){/*функция раскрытия карты*/
 
     $('.section').click(function(){
-        if($('.buy__map').height() == 200){
-            $(".buy__map").animate({height:"650px"}, "slow");
-            $(this).text($(this).attr('data-close'));
-            $('.buy__map--markers').css('display','block');
+        if($('.buy__map').height() == 200){/*при нажатии на ссылку с классом .section*/
+            $(".buy__map").animate({height:"650px"}, "slow");/*блоку карты задается выота 650px*/
+            $(this).text($(this).attr('data-close'));/*меняется текст кнопки*/
+            $('.buy__map--markers').css('display','block');/*блоку дается видимость*/
         }
-        else {
+        else {/*при повторном нажатии на ссылку с классом .section все эффекты сбрасываются по умолчанию*/
             $(".buy__map").animate({height:"200px"}, "slow");
             $(this).text($(this).attr('data-open'));
             $('.buy__map--markers').css('display','none');

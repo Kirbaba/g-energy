@@ -116,9 +116,14 @@
     float: left;
     padding: 40px 0px 35px 0px;
     &--copyright{
-      font-size: 14px;
+      display: block;
+      position: relative;
+      width: 33%;
+      float: left;
+      font-size: 12px;
       font-family: "DINProBold";
       color: #666;
+      text-align: left;
       a{
         font-size: 14px;
         font-family: "DINProBold";
@@ -134,12 +139,69 @@
       }
     }
     &--translation{
-      margin: 0px 37% 0px 37%;
+      display: block;
+      position: relative;
+      width: 33%;
+      float: left;
+      /* margin: 0px 37% 0px 37%; */
       text-align: center;
+      font-size: 14px;
+      font-family: "DINProBold";
+      color: #454545;
       a{
-
+        font-size: 14px;
+        font-family: "DINProBold";
+        text-transform: uppercase;
+        color: #666;
+        text-decoration: none;
+      }
+      a:hover{
+        color: #ffffff!important;
+      }
+      a.act{
+        color: #ffffff!important;
+      }
+    }
+    &--razrab{
+      display: block;
+      position: relative;
+      width: 33%;
+      text-align: right;
+      float: right;
+      color: #666;
+      font-size: 12px;
+      font-family: "DINProBold";
+      a{
+        color: #ffffff!important;
+        text-decoration: none;
+      }
+      a:hover{
+        color: #ffffff!important;
       }
     }
   }
 }
 /*close footer*/
+/* Стили привязываем к элементу с id='Go_Top' */
+#Go_Top{
+  background: url("../img/in_top.png");
+  width: 57px;
+  height: 57px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  display: none;
+  cursor: pointer;
+  opacity: 0.5;
+  -o-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 99;
+}
+
+#Go_Top:hover{
+  background: url("../img/in_toph.png");
+  opacity: 1;
+}

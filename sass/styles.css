@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*footer*/
 .footer {
   display: block;
@@ -94,9 +95,14 @@
     float: left;
     padding: 40px 0px 35px 0px; }
     .footer__bot--copyright {
-      font-size: 14px;
+      display: block;
+      position: relative;
+      width: 33%;
+      float: left;
+      font-size: 12px;
       font-family: "DINProBold";
-      color: #666; }
+      color: #666;
+      text-align: left; }
       .footer__bot--copyright a {
         font-size: 14px;
         font-family: "DINProBold";
@@ -109,10 +115,63 @@
       .footer__bot--copyright a:hover {
         color: #dbdde4; }
     .footer__bot--translation {
-      margin: 0px 37% 0px 37%;
-      text-align: center; }
+      display: block;
+      position: relative;
+      width: 33%;
+      float: left;
+      /* margin: 0px 37% 0px 37%; */
+      text-align: center;
+      font-size: 14px;
+      font-family: "DINProBold";
+      color: #454545; }
+      .footer__bot--translation a {
+        font-size: 14px;
+        font-family: "DINProBold";
+        text-transform: uppercase;
+        color: #666;
+        text-decoration: none; }
+      .footer__bot--translation a:hover {
+        color: #ffffff !important; }
+      .footer__bot--translation a.act {
+        color: #ffffff !important; }
+    .footer__bot--razrab {
+      display: block;
+      position: relative;
+      width: 33%;
+      text-align: right;
+      float: right;
+      color: #666;
+      font-size: 12px;
+      font-family: "DINProBold"; }
+      .footer__bot--razrab a {
+        color: #ffffff !important;
+        text-decoration: none; }
+      .footer__bot--razrab a:hover {
+        color: #ffffff !important; }
 
 /*close footer*/
+/* ╨б╤В╨╕╨╗╨╕ ╨┐╤А╨╕╨▓╤П╨╖╤Л╨▓╨░╨╡╨╝ ╨║ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╤Г ╤Б id='Go_Top' */
+#Go_Top {
+  background: url("../img/in_top.png");
+  width: 57px;
+  height: 57px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  display: none;
+  cursor: pointer;
+  opacity: 0.5;
+  -o-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 99; }
+
+#Go_Top:hover {
+  background: url("../img/in_toph.png");
+  opacity: 1; }
+
 /*section techno*/
 .techno {
   display: block;
@@ -234,12 +293,84 @@
       position: relative;
       margin: 0px 15px 0px 15px; }
   .buy__map {
-    background: url("../img/map.jpg");
     width: 100%;
     height: 200px;
     overflow: hidden;
     position: relative;
     float: left; }
+    .buy__map--markers {
+      background: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none; }
+      .buy__map--markers__region {
+        position: relative;
+        font-size: 18px;
+        margin: 1px 0px 0px 0px;
+        float: right; }
+        .buy__map--markers__region .region {
+          float: left;
+          position: relative;
+          z-index: 2; }
+          .buy__map--markers__region .region span {
+            display: block;
+            margin: 4px 10px 0px 0px;
+            font-family: "DINProLight";
+            font-size: 21px;
+            float: left; }
+          .buy__map--markers__region .region button {
+            width: 250px;
+            height: 38px;
+            background-color: #dbdde4;
+            border: 1px solid #a4a4a4;
+            border-radius: 20px;
+            font-size: 18px;
+            font-family: "DINProLight";
+            color: #333;
+            text-transform: uppercase; }
+            .buy__map--markers__region .region button span.caret {
+              float: right;
+              margin: 10px 0 0 0; }
+          .buy__map--markers__region .region ul.dropdown-menu {
+            left: 19px;
+            padding: 0;
+            margin: 0; }
+            .buy__map--markers__region .region ul.dropdown-menu li a {
+              font-size: 18px;
+              font-family: "DINProLight";
+              color: #333;
+              text-transform: uppercase;
+              border-bottom: 1px solid #ddd;
+              background-color: #eaebed;
+              padding-left: 6px; }
+              .buy__map--markers__region .region ul.dropdown-menu li a img {
+                margin-right: 9px;
+                margin-top: -4px; }
+        .buy__map--markers__region .city {
+          background: #fff;
+          width: 220px;
+          padding: 4px 10px 5px 20px;
+          margin: 0px 0px 0px 10px;
+          border: 1px solid #a4a4a4;
+          border-radius: 50px;
+          -moz-border-radius: 50px;
+          -khtml-border-radius: 50px;
+          font-size: 18px;
+          text-transform: uppercase;
+          position: relative;
+          z-index: 1;
+          float: right; }
+          .buy__map--markers__region .city input {
+            width: 100%;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "DINProLight";
+            outline: none;
+            border: none; }
     .buy__map--top {
       background: rgba(0, 0, 0, 0.6);
       width: 100%;
@@ -297,6 +428,12 @@
           margin: 0px 18% 0px 18%;
           padding: 4px 0px 0px 0px;
           text-align: center; }
+    .buy__map #map {
+      display: block;
+      width: 100%;
+      height: 650px;
+      padding: 0;
+      margin: 0; }
 
 /*close section buy*/
 /*section present*/
@@ -306,7 +443,8 @@
   width: 100%;
   background: #e95f0e;
   padding: 0px 0px 30px 0px;
-  float: left; }
+  float: left;
+  font-family: "DINProLight"; }
   .present__title {
     font-size: 38px;
     font-family: "DINProLight";
@@ -327,7 +465,6 @@
       width: 100%;
       padding: 13px 0px 8px 0px;
       font-size: 27px;
-      font-family: 'DINPro-Light';
       line-height: 27px;
       color: #000;
       text-align: center;
@@ -350,7 +487,6 @@
       width: 100%;
       padding: 13px 0px 8px 0px;
       font-size: 27px;
-      font-family: 'DINPro-Light';
       line-height: 27px;
       color: #e95f0e;
       text-align: center;

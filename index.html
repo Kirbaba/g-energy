@@ -8,7 +8,6 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/fotorama.css" rel="stylesheet" type="text/css">
     <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
     <link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
@@ -20,7 +19,7 @@
 <body>
 
 <!-- open .header -->
-<header class="header navbar-fixed-top">
+<header class="header">
     <!-- open .container -->
     <div class="container">
         <!-- open .row -->
@@ -518,6 +517,34 @@
     <div class="col-lg-12">
         <div class="row">
             <div class="buy__map">
+                <div id="map"></div>
+                <div class="buy__map--markers">
+                    <div class="buy__map--markers__region">
+                        <div class="region">
+                            <span>Сменить регион:</span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Выбор
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Россия</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Украина</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Казахстан</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Грузия</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Беларусия</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Италия</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Узбекистан</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Армения</a></li>
+                                    <li><a href="#"><img src="img/rus.png" alt="Россия">Туркменистан</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="city">
+                            <input type="text" placeholder="Введите город" value="">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="buy__map--top">
                     <div class="buy__map--top__center">
                         <a href="#" class="section" data-close="СВЕРНУТЬ КАРТУ" data-open="РАЗВЕРНУТЬ КАРТУ">РАЗВЕРНУТЬ
@@ -527,7 +554,6 @@
                         <p class="city_title">город</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -658,10 +684,14 @@
                             <a href="#">Контакты</a>
                         </div>
                         <div class="footer__bot--translation">
-                            <a href="#">Русский</a>
-                            <a href="#">English</a>
-                            <a href="#">Italian</a>
+                            <a href="#" class="act">Русский</a> |
+                            <a href="#">English</a> |
+                            <a href="#">Italian</a> |
                             <a href="#">Српски</a>
+                        </div>
+                        <div class="footer__bot--razrab">
+                            Создание сайта –
+                            <a href="http://nsign.ru/">«Энсайн»</a>
                         </div>
                     </div>
                 </div>
@@ -670,12 +700,14 @@
     </div>
 </footer>
 <!--close .footer-->
+<a href="#" id='Go_Top'></a>
 </body>
 <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/fotorama.js" type="text/javascript"></script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="js/owl.carousel.min.js" type="text/javascript"></script>
 <script src="js/highlight.js" type="text/javascript"></script>
 <script src="js/slick/slick.min.js" type="text/javascript"></script>
 <script src="js/script.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </html>

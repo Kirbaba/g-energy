@@ -737,6 +737,30 @@ ul {
     transition: all 0.3s linear
 }
 
+.assortment--linksm {
+    display: none;
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 35px 0;
+    line-height: 67px;
+    text-align: center;
+    font-family: "DINProBold";
+    font-size: 38px;
+    color: #3A3B3D;
+    text-decoration: none;
+    background-image: url("../img/g-bg.png");
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-color: #DBDDE4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear
+}
+
 .assortment--link:hover {
     background-color: #e95f0e;
     text-decoration: none;

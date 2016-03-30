@@ -9,7 +9,7 @@
 @media only screen and (max-width: 1025px) {
 
   .header--modal {
-    font-size: 11px!important;    
+    font-size: 11px!important;
   }
   .top-slider #owl-demo .owl-prev {
     left: -13px!important;
@@ -364,7 +364,14 @@
 }
 
 @media only screen and (max-width: 380px) {
-
+  .techno__col {
+    width: 100%;
+    float: left;
+  }
+  .techno__col:nth-of-type(5) {
+    width: 100%;
+    float: left;
+  }
 }
 
 @media only screen and (max-width: 320px) {

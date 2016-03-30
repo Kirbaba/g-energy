@@ -945,6 +945,14 @@
 
   .footer__bot--copyright, .footer__bot--translation, .footer__bot--razrab {
     text-align: center; } }
+@media only screen and (max-width: 380px) {
+  .techno__col {
+    width: 100%;
+    float: left; }
+
+  .techno__col:nth-of-type(5) {
+    width: 100%;
+    float: left; } }
 @media only screen and (max-width: 320px) {
   .icon--price {
     margin: 9px 0px 0px 0px !important; }

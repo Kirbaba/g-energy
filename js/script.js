@@ -1,8 +1,9 @@
-$(document).ready(function(){
-    $(window).scroll(function(){/*функция появления стрелки вверх при прокрутке окна вниз*/
+$(document).ready(function () {
+    $(window).scroll(function () {/*функция появления стрелки вверх при прокрутке окна вниз*/
 
         $(this).hide().removeAttr("href");
-        if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")/*показывать при прокрутке вниз показывать медленно #Go_Top*/
+        if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+        /*показывать при прокрутке вниз показывать медленно #Go_Top*/
         var scrollDiv = $('#Go_Top');
 
         if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")/*при прокрутке ввверх медленно скрывать #Go_Top*/
@@ -16,37 +17,54 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){/*функция фиксированного меню*/
+$(document).ready(function () {/*функция фиксированного меню*/
 
     var header = $('.header');
     var nav_top = $('.navbar');
 
-    $(window).scroll(function(){
-        if( $(this).scrollTop() > 50){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
             header.addClass("header_top");
             nav_top.addClass("nav_top");
-        } else if ( $(this).scrollTop() <= 50){
+        } else if ($(this).scrollTop() <= 50) {
             header.removeClass("header_top");
             nav_top.removeClass("nav_top");
         }
     });
 });
 
-$(document).ready(function(){/*функция раскрытия карты*/
+$(document).ready(function () {/*функция раскрытия карты*/
 
-    $('.section').click(function(){
-        if($('.buy__map').height() == 200){/*при нажатии на ссылку с классом .section*/
-            $(".buy__map").animate({height:"650px"}, "slow");/*блоку карты задается выота 650px*/
-            $(this).text($(this).attr('data-close'));/*меняется текст кнопки*/
-            $('.buy__map--markers').css('display','block');/*блоку дается видимость*/
+    $('.section').click(function () {
+        if ($('.buy__map').height() == 200) {/*при нажатии на ссылку с классом .section*/
+            $(".buy__map").animate({height: "650px"}, "slow");
+            /*блоку карты задается выота 650px*/
+            $(this).text($(this).attr('data-close'));
+            /*меняется текст кнопки*/
+            $('.buy__map--markers').css('display', 'block');
+            /*блоку дается видимость*/
         }
         else {/*при повторном нажатии на ссылку с классом .section все эффекты сбрасываются по умолчанию*/
-            $(".buy__map").animate({height:"200px"}, "slow");
+            $(".buy__map").animate({height: "200px"}, "slow");
             $(this).text($(this).attr('data-open'));
-            $('.buy__map--markers').css('display','none');
+            $('.buy__map--markers').css('display', 'none');
         }
         return false;
     });
+});
+
+$(document).ready(function () {/*функция выплывающего блока справа*/
+
+    $('#city').click(function () {/*при клике на элемент #city*/
+        $('.buy__map--block').animate({right: "0"}, "slow");/*блок смещается в право до 0px*/
+        return false
+    });
+
+    $('#city').focusout(function () {/*при клике за элемент #city*/
+        $('.buy__map--block').animate({right: "-330px"}, "slow");/*блок задается смещается в право по умолчанию*/
+        return false
+    });
+
 });
 
 /*-----Yandex map-----*/

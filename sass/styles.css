@@ -398,6 +398,16 @@
             background-position: center;
             background-repeat: no-repeat;
             color: #ff6b00; }
+    .buy__map--block {
+      background: #fff;
+      width: 340px;
+      height: 532px;
+      position: absolute;
+      top: 59px;
+      right: -330px;
+      z-index: 4;
+      display: block;
+      overflow: hidden; }
     .buy__map--top {
       background: rgba(0, 0, 0, 0.6);
       width: 100%;
@@ -405,7 +415,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      z-index: 3; }
+      z-index: 6; }
       .buy__map--top__center {
         min-width: 200px;
         max-width: 1500px;
@@ -596,5 +606,38 @@
   text-transform: uppercase; }
 
 /*close yandex map*/
+@media only screen and (max-width: 320px) {
+  .icon--price {
+    margin: 9px 0px 0px 0px !important; }
+
+  .header--price {
+    font-size: 0 !important; }
+
+  .header--search {
+    display: none !important; }
+
+  .header--search--btn {
+    padding: 4px 0px 0px 4px !important; }
+
+  .header--modal {
+    font-size: 0 !important; }
+
+  .header--modal i {
+    margin: 10px 5px !important; }
+
+  .navbar-nav {
+    text-align: center !important; }
+
+  .navigation .navbar-nav > li > a {
+    padding: 5px 30px 5px 30px !important; }
+
+  .owl-buttons {
+    display: none !important; }
+
+  .top-slider__item h2 {
+    font-size: 48px !important; }
+
+  .top-slider--more {
+    font-size: 15px !important; } }
 
 /*# sourceMappingURL=styles.css.map */

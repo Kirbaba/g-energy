@@ -269,6 +269,17 @@
         }
       }
     }
+    &--block{
+      background: #fff;
+      width: 340px;
+      height: 532px;
+      position: absolute;
+      top: 59px;
+      right: -330px;
+      z-index: 4;
+      display: block;
+      overflow: hidden;
+    }
     &--top {
       background: rgba(0, 0, 0, 0.60);
       width: 100%;
@@ -276,7 +287,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      z-index: 3;
+      z-index: 6;
       &__center {
         min-width: 200px;
         max-width: 1500px;
@@ -491,3 +502,5 @@
   text-transform: uppercase;
 }
 /*close yandex map*/
+
+@import "responsive/_style";

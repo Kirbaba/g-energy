@@ -337,7 +337,7 @@ ul {
     width: 100%;
     border-left: 1px solid #CFCFCF;
     border-right: 1px solid #8A8A8A;
-    position: relative
+    position: relative;
 }
 
 .header--lang:before, .header--lang:after {

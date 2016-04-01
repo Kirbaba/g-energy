@@ -15,14 +15,12 @@ $(document).ready(function () {
         $("html, body").animate({scrollTop: 0}, "slow");
         return false;
     });
-});
 
-$(document).ready(function () {/*функция фиксированного меню*/
+    $(window).scroll(function () {/*функция фиксированного меню*/
 
-    var header = $('.header');
-    var nav_top = $('.navbar');
+        var header = $('.header');
+        var nav_top = $('.navbar');
 
-    $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {/*при прокрутке вниз более 50px*/
             header.addClass("header_top");/*элементам присваиваются класы с фиксированным положением*/
             nav_top.addClass("nav_top");
@@ -31,27 +29,83 @@ $(document).ready(function () {/*функция фиксированного м�
             nav_top.removeClass("nav_top");
         }
     });
-});
-
-$(document).ready(function () {/*функция раскрытия карты*/
 
     $('.section').click(function () {
         if ($('.buy__map').height() == 200) {/*при нажатии на ссылку с классом .section*/
             $(".buy__map").animate({height: "650px"}, "slow");/*блоку карты задается выота 650px*/
+            $("#map").animate({height: "650px"}, "2000", function(){/*функция раскрытия карты*/
+                $('#map').empty();
+                /*-----Yandex map-----*/
+                ymaps.ready(function () {
+                    var myMap = new ymaps.Map('map', {
+                            center: [55.763918, 37.606388],
+                            zoom: 9
+                        }, {
+                            searchControlProvider: 'yandex#search'
+                        }),
+                        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                            hintContent: 'img/marker.png'
+                            //balloonContent: 'Это красивая метка'
+                        }, {
+                            // Опции.
+                            // Необходимо указать данный тип макета.
+                            iconLayout: 'default#image',
+                            // Своё изображение иконки метки.
+                            iconImageHref: 'img/marker.png',
+                            // Размеры метки.
+                            iconImageSize: [30, 42],
+                            // Смещение левого верхнего угла иконки относительно
+                            // её "ножки" (точки привязки).
+                            iconImageOffset: [-3, -42]
+                        });
+
+                    myMap.geoObjects.add(myPlacemark);
+                });
+                /*-----Yandex map end-----*/
+            });
             $(this).text($(this).attr('data-close'));/*меняется текст кнопки*/
             $('.buy__map--markers').css('display', 'block');/*блоку дается видимость*/
+
         }
         else {/*при повторном нажатии на ссылку с классом .section все эффекты сбрасываются по умолчанию*/
             $(".buy__map").animate({height: "200px"}, "slow");
+            $("#map").animate({height: "200px"}, "2000", function(){
+                $('#map').empty();
+                /*-----Yandex map-----*/
+                ymaps.ready(function () {
+                    var myMap = new ymaps.Map('map', {
+                            center: [55.763918, 37.606388],
+                            zoom: 9
+                        }, {
+                            searchControlProvider: 'yandex#search'
+                        }),
+                        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                            hintContent: 'img/marker.png'
+                            //balloonContent: 'Это красивая метка'
+                        }, {
+                            // Опции.
+                            // Необходимо указать данный тип макета.
+                            iconLayout: 'default#image',
+                            // Своё изображение иконки метки.
+                            iconImageHref: 'img/marker.png',
+                            // Размеры метки.
+                            iconImageSize: [30, 42],
+                            // Смещение левого верхнего угла иконки относительно
+                            // её "ножки" (точки привязки).
+                            iconImageOffset: [-3, -42]
+                        });
+
+                    myMap.geoObjects.add(myPlacemark);
+                });
+                /*-----Yandex map end-----*/
+            });
             $(this).text($(this).attr('data-open'));
             $('.buy__map--markers').css('display', 'none');
         }
         return false;
     });
-});
 
-$(document).ready(function () {/*функция выплывающего блока справа*/
-
+    /*функция выплывающего блока справа*/
     $('#city').click(function () {/*при клике на элемент #city*/
         $('.buy__map--block').animate({right: "0"}, "slow");/*блок смещается в право до 0px*/
         return false
@@ -61,6 +115,7 @@ $(document).ready(function () {/*функция выплывающего бло�
         $('.buy__map--block').animate({right: "-330px"}, "slow");/*блок задается смещается в право по умолчанию*/
         return false
     });
+
 
 });
 

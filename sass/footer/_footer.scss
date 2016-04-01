@@ -184,7 +184,7 @@
 /*close footer*/
 /* Стили привязываем к элементу с id='Go_Top' */
 #Go_Top{
-  background: url("../img/in_top.png");
+  background: url("../img/in_toph.png");
   width: 57px;
   height: 57px;
   position: fixed;
@@ -193,15 +193,15 @@
   z-index: 2;
   display: none;
   cursor: pointer;
-  opacity: 0.5;
-  -o-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+//  opacity: 0.5;
+//  -o-transition: all 0.2s linear;
+//  -moz-transition: all 0.2s linear;
+//  -webkit-transition: all 0.2s linear;
+//  transition: all 0.2s linear;
   z-index: 99;
 }
-
-#Go_Top:hover{
-  background: url("../img/in_toph.png");
-  opacity: 1;
-}
+//
+//#Go_Top:hover{
+//  background: url("../img/in_top.png");
+////  opacity: 1;
+//}

@@ -155,7 +155,7 @@ ul {
     float: left;
     position: relative;
     width: 100%;
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #252525;
     background-image: url(../img/nav-bg.png);
     border: none;
@@ -184,9 +184,9 @@ ul {
 
 .navigation ul li a {
     color: #BBBCBE;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "DINProBold";
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .navigation ul li a i {
@@ -808,7 +808,8 @@ ul {
 
 .home-news .nav-pills li {
     display: inline-block;
-    float: none
+    float: none;
+    margin-right: 20px;
 }
 
 .home-news .nav-pills li a {

@@ -230,11 +230,19 @@
   .header--modal i {
     margin: 10px 5px!important;
   }
-  .navbar-nav {
-    text-align: center!important;
-  }
   .navigation .navbar-nav > li > a {
     padding: 5px 30px 5px 30px!important;
+  }
+  .navigation ul li a {
+    background-image: url("../img/m_st.png")!important;
+    background-repeat: no-repeat!important;
+    background-position: right!important;
+  }
+  .navbar-brand {
+    float: right!important;
+  }
+  .navbar-brand img {
+    width: 100% !important;
   }
   .owl-buttons{
     display: none!important;
@@ -270,10 +278,10 @@
     height: 200px!important;
   }
   .techno__col {
-    width: 50%;
+    width: 100%;
     float: left;
   }
-  .techno__col:last-of-type {
+  .techno__col:nth-of-type(5) {
     width: 100%;
     float: left;
   }
@@ -286,16 +294,56 @@
   .buy__map--top__center {
     padding: 3px;
   }
-  .buy__map--top__center a.section, .buy__map--top__center a.go_section {
-    width: 190px;
+  .buy__map--top__center {
+    padding: 0px 30px 0px 30px;
+  }
+  .buy__map--top__center a.section {
+    width: 100%;
+    float: left;
+    margin: 5px auto;
+  }
+  .buy__map--top__center a.go_section {
+    width: 100%;
+    float: left;
+    margin: 5px auto;
+  }
+  .buy__map--markers__region .region span {
+    display: none;
   }
   .buy__map--markers__region {
     width: 100%;
     margin: 0px;
     float: left;
   }
-  .buy__map--markers__region .region span {
+  .buy__map--markers__region .region {
+    width: 100%;
+    float: none;
+  }
+  .buy__map--markers__region .city {
+    width: 80%;
+    margin: 5px auto;
+    float: none;
+  }
+  .buy__map--markers__checkbox {
+    margin: 0px;
+    float: left;
+  }
+  .buy__map--markers__checkbox label {
+    margin: 0px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .present__title {
     display: none;
+  }
+  .present__titlesm {
+    display: block;
+    font-size: 18px;
+    span{
+      img{
+        width: 36px;
+      }
+    }
   }
   .present__title {
     display: none;
@@ -341,12 +389,12 @@
   .footer__top--partners a {
     width: 50%;
     img{
-      width: 245px;
+      width: 180px;
     }
   }
   .footer__mid--share {
     display: inline-block;
-    width: 45%;
+    width: 100%;
     float: left;
     text-align: left;
     margin-right: 0;
@@ -355,15 +403,43 @@
       width: 100%;
     }
     a{
-      margin: 10px auto;
+      margin: 10px 10px;
+    }
+  }
+  .footer__mid--share:nth-of-type(2) {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 10px;
+    span{
+      width: 100%;
+    }
+    a{
+      margin: 10px 10px;
     }
   }
   .footer__bot--copyright, .footer__bot--translation, .footer__bot--razrab {
+    width: 100%;
     text-align: center;
+    margin: 10px auto;
   }
 }
 
 @media only screen and (max-width: 380px) {
+
+  .navbar-brand {
+    float: right!important;
+  }
+  .navbar-brand img {
+    width: 100% !important;
+  }
+  .navigation ul li a {
+    background-image: url("../img/m_st.png")!important;
+    background-repeat: no-repeat!important;
+    background-position: right!important;
+  }
   .techno__col {
     width: 100%;
     float: left;
@@ -394,14 +470,31 @@
   .header--modal i {
     margin: 10px 5px!important;
   }
-  .navbar-nav {
-    text-align: center!important;
+  .navigation {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+  }
+  .navigation .navbar-brand {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
   }
   .navigation .navbar-nav > li > a {
     padding: 5px 30px 5px 30px!important;
   }
   .navigation ul li a {
     font-size: 18px!important;
+  }
+  .navigation ul li a {
+    background-image: url("../img/m_st.png")!important;
+    background-repeat: no-repeat!important;
+    background-position: right!important;
+  }
+  .navbar-brand {
+    float: right!important;
+  }
+  .navbar-brand img {
+    width: 100% !important;
+    margin-top: 0px!important;
   }
   .owl-buttons{
     display: none!important;
@@ -554,7 +647,7 @@
   }
   .footer__mid--share {
     display: inline-block;
-    width: 45%;
+    width: 100%;
     float: left;
     text-align: left;
      margin-right: 0;
@@ -563,11 +656,27 @@
       width: 100%;
     }
     a{
-      margin: 10px auto;
+      margin: 10px 10px;
+    }
+  }
+  .footer__mid--share:nth-of-type(2) {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 10px;
+    span{
+      width: 100%;
+    }
+    a{
+      margin: 10px 10px;
     }
   }
   .footer__bot--copyright, .footer__bot--translation, .footer__bot--razrab {
+    width: 100%;
     text-align: center;
+    margin: 10px auto;
   }
 }
 

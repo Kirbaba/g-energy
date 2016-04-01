@@ -1,5 +1,44 @@
 @import "footer/_style";
 
+.navbar-toggle {
+  float: left!important;
+  margin-left: 15px!important;
+  border: none!important;
+  padding: 5px 0px!important;
+  margin-bottom: 0px!important;
+}
+.navbar-toggle .icon-bar {
+  width: 30px!important;
+  height: 4px!important;
+  border-radius: 2px!important;
+  margin-bottom: 6px!important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff!important;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent!important;
+}
+.navbar-nav {
+  text-align: left!important;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #ff6b00!important;
+}
+.nav>li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 6px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+.navbar-brand>img {
+  display: block;
+  margin-top: 10px;
+}
+
+
 /*section techno*/
 .techno {
   display: block;
@@ -358,7 +397,7 @@
     #map{
       display: block;
       width: 100%;
-      height: 650px;
+      height: 200px;
       padding: 0;
       margin: 0;
     }
